@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "Home",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "information": "Information"
+  },
+  "hero": {
+    "subtitle": "Tattoo & Art",
+    "description": "Professional tattooing in Zalaegerszeg. Every piece is unique and personalized – whether it's fineline, blackwork, or realism.",
+    "scroll": "Scroll"
+  },
+  "pages": {
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "information": "Information",
+    "comingSoon": "Coming soon..."
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Page not found",
+    "back": "Back to home"
+  }
+}

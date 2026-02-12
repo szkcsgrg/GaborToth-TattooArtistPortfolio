@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "Home",
+    "gallery": "Galleria",
+    "contact": "Contatto",
+    "information": "Informazioni"
+  },
+  "hero": {
+    "subtitle": "Tatuaggio & Arte",
+    "description": "Tatuaggi professionali a Zalaegerszeg. Ogni lavoro è unico e personalizzato – che si tratti di fineline, blackwork o realismo.",
+    "scroll": "Scorri"
+  },
+  "pages": {
+    "gallery": "Galleria",
+    "contact": "Contatto",
+    "information": "Informazioni",
+    "comingSoon": "Prossimamente..."
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Pagina non trovata",
+    "back": "Torna alla home"
+  }
+}

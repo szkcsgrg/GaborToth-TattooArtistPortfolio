@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "Kezdőlap",
+    "gallery": "Galéria",
+    "contact": "Kapcsolat",
+    "information": "Információk"
+  },
+  "hero": {
+    "subtitle": "Tetoválás & Művészet",
+    "description": "Professzionális tetoválás Zalaegerszegen. Minden munkám egyedi, személyre szabott – legyen szó fineline, blackwork vagy realista stílusról.",
+    "scroll": "Görgess"
+  },
+  "pages": {
+    "gallery": "Galéria",
+    "contact": "Kapcsolat",
+    "information": "Információk",
+    "comingSoon": "Hamarosan..."
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Az oldal nem található",
+    "back": "Vissza a főoldalra"
+  }
+}

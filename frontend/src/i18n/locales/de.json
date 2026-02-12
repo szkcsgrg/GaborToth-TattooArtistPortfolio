@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "gallery": "Galerie",
+    "contact": "Kontakt",
+    "information": "Informationen"
+  },
+  "hero": {
+    "subtitle": "Tätowierung & Kunst",
+    "description": "Professionelles Tätowieren in Zalaegerszeg. Jede Arbeit ist einzigartig und individuell gestaltet – ob Fineline, Blackwork oder Realismus.",
+    "scroll": "Scrollen"
+  },
+  "pages": {
+    "gallery": "Galerie",
+    "contact": "Kontakt",
+    "information": "Informationen",
+    "comingSoon": "Demnächst..."
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Seite nicht gefunden",
+    "back": "Zurück zur Startseite"
+  }
+}
