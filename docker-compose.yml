@@ -1,0 +1,17 @@
+services:
+  tgart:
+    build: .
+    container_name: tgart-app
+    restart: unless-stopped
+    ports:
+      - "${APP_PORT:-8083}:5000"
+    environment:
+      - SECRET_KEY=${SECRET_KEY:-change-me-in-production}
+      - FLASK_ENV=${FLASK_ENV:-production}
+    volumes:
+      - tgart-data:/app/data
+      - tgart-uploads:/app/uploads
+
+volumes:
+  tgart-data:
+  tgart-uploads:

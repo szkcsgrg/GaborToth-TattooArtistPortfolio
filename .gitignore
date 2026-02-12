@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Database
+*.db
+*.sqlite3
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+
+# Plans (design assets, client documents - not for repo)
+Plans/
+
+# Uploads (runtime uploaded images)
+backend/uploads/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Local project files
+PROJECT_TRACKER.md
+frontend/README.md

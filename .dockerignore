@@ -1,0 +1,9 @@
+Plans/
+.git/
+.DS_Store
+*.md
+.env
+.claude/
+frontend/node_modules/
+__pycache__/
+*.pyc
