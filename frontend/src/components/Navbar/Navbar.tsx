@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import navLogo from '../../assets/images/Logo.png'
+import navLogo from '../../assets/images/logo.png'
 import styles from './Navbar.module.scss'
 
 const LANGUAGES = ['hu', 'en', 'de', 'it'] as const
