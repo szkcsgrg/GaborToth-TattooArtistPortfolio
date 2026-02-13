@@ -8,6 +8,7 @@ import Contact from './pages/Contact/Contact.tsx'
 import Information from './pages/Information/Information.tsx'
 import NotFound from './pages/NotFound/NotFound.tsx'
 
+
 export default function App() {
   const [loading, setLoading] = useState(true)
   const [isRevealed, setIsRevealed] = useState(false)

@@ -10,6 +10,9 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
   const [fadeOut, setFadeOut] = useState(false)
 
   useEffect(() => {
+    document.documentElement.style.overflow = 'hidden'
+    document.body.style.overflow = 'hidden'
+
     const preloadImg = new Image()
     preloadImg.src = '/images/landing-cover.png'
 
@@ -17,7 +20,12 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
       setFadeOut(true)
     }, 2800)
 
-    return () => clearTimeout(timer)
+    return () => {
+      document.documentElement.style.overflow = ''
+      document.body.style.overflow = ''
+      window.scrollTo(0, 0)
+      clearTimeout(timer)
+    }
   }, [])
 
   const handleTransitionEnd = (e: React.TransitionEvent) => {

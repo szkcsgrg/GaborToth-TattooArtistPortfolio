@@ -9,6 +9,10 @@ interface HeroProps {
 export default function Hero({ isRevealed }: HeroProps) {
   const { t } = useTranslation()
 
+  const scrollToAbout = () => {
+    document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <section className={styles.hero}>
       <div className={styles.background} />
@@ -17,10 +21,10 @@ export default function Hero({ isRevealed }: HeroProps) {
         <img src={logo} alt="TG Art Tattoo" className={styles.logo} />
         <p className={styles.description}>{t('hero.description')}</p>
       </div>
-      <div className={`${styles.scrollIndicator} ${isRevealed ? styles.revealed : ''}`}>
+      <button type="button" onClick={scrollToAbout} className={`${styles.scrollIndicator} ${isRevealed ? styles.revealed : ''}`}>
         <span className={styles.scrollText}>{t('hero.scroll')}</span>
         <div className={styles.chevron} />
-      </div>
+      </button>
     </section>
   )
 }

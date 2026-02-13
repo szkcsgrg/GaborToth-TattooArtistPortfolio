@@ -1,11 +1,12 @@
 import { Outlet } from 'react-router-dom'
 import Navbar from '../Navbar/Navbar.tsx'
+import styles from './Layout.module.scss'
 
 export default function Layout() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className={styles.main}>
         <Outlet />
       </main>
     </>
