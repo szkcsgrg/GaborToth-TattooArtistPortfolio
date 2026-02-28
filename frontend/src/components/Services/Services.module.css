@@ -1,0 +1,245 @@
+.services {
+  position: relative;
+  width: 100%;
+  padding: 6rem 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.header.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sectionLabel {
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.75rem;
+}
+
+.sectionTitle {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--color-text-primary);
+  margin-bottom: 1rem;
+}
+
+.sectionDescription {
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.divider {
+  width: 80px;
+  height: 1px;
+  background: var(--color-border);
+  margin: 2.5rem auto;
+  transform: scaleX(0);
+  transition: transform 0.6s ease 0.3s;
+}
+.divider.visible {
+  transform: scaleX(1);
+}
+
+.card {
+  position: relative;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 2rem;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+}
+.card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.card:hover {
+  border-color: var(--color-text-secondary);
+  box-shadow: 0 0 20px rgba(250, 250, 250, 0.03);
+}
+.card:hover .cardNumber {
+  opacity: 0.12;
+}
+.card:hover .cardIcon {
+  transform: scale(1.12);
+  color: var(--color-text-primary);
+}
+
+.cardNumber {
+  position: absolute;
+  top: 0.75rem;
+  right: 1.25rem;
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  opacity: 0.06;
+  line-height: 1;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.cardIcon {
+  width: 40px;
+  height: 40px;
+  color: var(--color-text-secondary);
+  margin-bottom: 1.25rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+  flex-shrink: 0;
+}
+
+.cardTitle {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+.cardDescription {
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+}
+
+.featuredCard {
+  composes: card;
+  width: 100%;
+  max-width: 900px;
+  background: var(--color-bg-secondary);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 2.5rem 3rem;
+}
+.featuredCard .cardIcon {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 0;
+}
+.featuredCard .cardNumber {
+  font-size: 5rem;
+}
+.featuredCard .cardTitle {
+  font-size: 1.35rem;
+}
+.featuredCard .cardDescription {
+  font-size: 1rem;
+}
+
+.featuredText {
+  flex: 1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  width: 100%;
+  max-width: 900px;
+  margin-top: 2rem;
+}
+
+@media (max-width: 1250px) {
+  .services {
+    padding: 5rem 4rem;
+  }
+  .sectionTitle {
+    font-size: 2.2rem;
+  }
+  .featuredCard {
+    padding: 2rem 2.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .services {
+    padding: 4rem 3rem;
+  }
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  .sectionDescription {
+    font-size: 1rem;
+  }
+  .featuredCard {
+    gap: 2rem;
+    padding: 2rem;
+  }
+  .featuredCard .cardIcon {
+    width: 48px;
+    height: 48px;
+  }
+  .featuredCard .cardTitle {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 768px) {
+  .services {
+    padding: 4rem 2rem;
+  }
+  .sectionTitle {
+    font-size: 1.6rem;
+  }
+  .sectionDescription {
+    font-size: 0.95rem;
+  }
+  .featuredCard {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    padding: 1.75rem;
+  }
+  .featuredCard .cardIcon {
+    margin-bottom: 0;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .cardNumber {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 480px) {
+  .services {
+    padding: 3rem 1.25rem;
+  }
+  .sectionTitle {
+    font-size: 1.4rem;
+  }
+  .sectionLabel {
+    font-size: 0.75rem;
+  }
+  .sectionDescription {
+    font-size: 0.9rem;
+  }
+  .card {
+    padding: 1.5rem;
+  }
+  .featuredCard {
+    padding: 1.5rem;
+  }
+}

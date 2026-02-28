@@ -25,6 +25,88 @@
     "title": "About Me",
     "readMore": "Read more",
     "readLess": "Show less",
-    "text": "I am Gábor Tóth, the creator and owner of TG Art Tattoo. I have been in the industry since 2018, but I only opened my own tattoo studio in Zalaegerszeg in 2023. Initially, I tried to learn and practice while working, but over time it became unsustainable, and I started building my own business. Since then, I have been putting much more effort into always being better and improving continuously so that I can create quality tattoos for you every day. In the past few years, I have achieved several successes, but I never feel like I can stop; I am always looking for new goals and challenges. Over the years, I have tried myself in several styles, but it was late that it really started to become clear what my direction is. I mostly move in the sketch and fineline line, within which I especially like to create in horror, animal, and plant-themed patterns, but I also like to spread my wings in the world of realism. For me, my clients are the most important, and I want to provide them with the best, so I try to be up to par in several styles. I believe that every tattoo has meaning and a story, so I am indescribably grateful for every person who chooses me because without them, I wouldn't be where I am! For me, this whole thing is not just work but also passion!"
+    "paragraphs": [
+      "I am Gábor Tóth, the creator and owner of TG Art Tattoo. I have been in the industry since 2018, but I only opened my own tattoo studio in Zalaegerszeg in 2023.",
+      "Initially, I tried to learn and practice while working, but over time it became unsustainable, and I started building my own business. Since then, I have been putting much more effort into always being better and improving continuously so that I can create quality tattoos for you every day. In the past few years, I have achieved several successes, but I never feel like I can stop; I am always looking for new goals and challenges.",
+      "Over the years, I have tried myself in several styles, but it was late that it really started to become clear what my direction is. I mostly move in the sketch and fineline line, within which I especially like to create in horror, animal, and plant-themed patterns, but I also like to spread my wings in the world of realism.",
+      "For me, my clients are the most important, and I want to provide them with the best, so I try to be up to par in several styles. I believe that every tattoo has meaning and a story, so I am indescribably grateful for every person who chooses me because without them, I wouldn't be where I am! For me, this whole thing is not just work but also passion!"
+    ]
+  },
+  "services": {
+    "title": "Services",
+    "description": "Every tattoo is a unique, personalized work of art that reflects the wearer's personality and story. My services include the following:",
+    "tattooing": {
+      "title": "Tattooing",
+      "description": "Custom, personalized tattoos created in a professional environment. I work in sketch, fineline, blackwork, and realism styles — every piece is a unique work of art."
+    },
+    "customDesign": {
+      "title": "Custom Design",
+      "description": "I create unique, personalized designs that reflect the client's personality and taste."
+    },
+    "logoDesign": {
+      "title": "Logo / Graphics Design",
+      "description": "I design custom logos and graphics tailored to the client's needs and style."
+    },
+    "cdCoverDesign": {
+      "title": "CD Cover Design",
+      "description": "I design custom CD covers that reflect the artist's or company's style."
+    },
+    "digitalDrawing": {
+      "title": "Digital Drawing Design",
+      "description": "I create custom digital drawings tailored to the client's needs and style."
+    }
+  },
+  "galleryPreview": {
+    "title": "Gallery",
+    "description": "A glimpse of my work – every tattoo tells a unique story.",
+    "viewAll": "View full gallery"
+  },
+  "reviews": {
+    "title": "Reviews",
+    "description": "What my clients say about me – their satisfaction is the greatest recognition.",
+    "translatedFrom": "Translated from Hungarian",
+    "items": {
+      "1": {
+        "text": "I wholeheartedly recommend Gábor to everyone. I wish everyone could have a first tattoo experience like this. The atmosphere was great, very pleasant and tasteful environment. Helpful and friendly. I don't regret choosing him for a second, and I'll definitely go to him for my future tattoos too."
+      },
+      "2": {
+        "text": "The tattoo artist is very talented and creative. I have 2 tattoos from him so far and both are perfect, meticulous work. He is also very fair, cool, and patient. I can't wait to get another tattoo from him!"
+      },
+      "3": {
+        "text": "I'm very satisfied. He's approachable and friendly, so the sessions always pass in a good mood. He's precise and pays attention to every little detail, which shows in the finished tattoo. I wholeheartedly recommend him to everyone who wants quality work!"
+      }
+    }
+  },
+  "cta": {
+    "title": "Ready for your unique tattoo?",
+    "description": "Get in touch with me and let's discuss your ideas. Every tattoo is a collaboration – I look forward to hearing from you!",
+    "button": "Get in touch"
+  },
+  "gallery": {
+    "label": "Portfolio",
+    "title": "Gallery",
+    "description": "Explore my work – every tattoo tells a unique story.",
+    "empty": "No results in this category.",
+    "filters": {
+      "all": "All",
+      "fineline": "Fineline",
+      "blackwork": "Blackwork",
+      "realism": "Realism",
+      "minimal": "Minimal",
+      "sketch": "Sketch",
+      "abstract": "Abstract"
+    }
+  },
+  "footer": {
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "social": "Social Media",
+    "documents": "Documents",
+    "rights": "All rights reserved.",
+    "docs": {
+      "termsPrivacy": "Terms & Privacy",
+      "consent": "Consent Form",
+      "parentalConsent": "Parental Consent Form"
+    }
   }
 }

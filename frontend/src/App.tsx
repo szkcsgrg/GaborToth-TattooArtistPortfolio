@@ -24,9 +24,9 @@ export default function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home isRevealed={isRevealed} />} />
-          <Route path="/galeria" element={<Gallery />} />
-          <Route path="/kapcsolat" element={<Contact />} />
-          <Route path="/informaciok" element={<Information />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/information" element={<Information />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

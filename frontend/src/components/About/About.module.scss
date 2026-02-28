@@ -1,28 +1,78 @@
+// ─── Section ───
 .about {
   position: relative;
   width: 100%;
-  min-height: 100vh;
-  padding: 6rem 10rem;
-  display: grid;
+  padding: 6rem 10rem 3rem;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-items: center;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 4rem;
 }
 
+// ─── Header ───
 .header {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: var(--color-text-primary);
+  text-align: center;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.text {
-  font-size: 1.2rem;
+.sectionLabel {
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.75rem;
+}
+
+.sectionTitle {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 2.5rem;
   font-weight: 400;
-  line-height: 1.9;
   color: var(--color-text-primary);
-  text-align: left;
+  margin-bottom: 1rem;
+}
+
+// ─── Divider ───
+.divider {
+  width: 80px;
+  height: 1px;
+  background: var(--color-border);
+  margin: 2.5rem auto;
+  transform: scaleX(0);
+  transition: transform 0.6s ease 0.3s;
+
+  &.visible {
+    transform: scaleX(1);
+  }
+}
+
+// ─── Content grid ───
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+  width: 100%;
+  max-width: 1100px;
+}
+
+// ─── Image ───
+.imageWrapper {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease 0.3s, transform 0.7s ease 0.3s;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .image {
@@ -32,53 +82,99 @@
   filter: grayscale(100%) brightness(1.3);
 }
 
+// ─── Text ───
+.textWrapper {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease 0.45s, transform 0.7s ease 0.45s;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text {
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+  text-align: left;
+
+  & + & {
+    margin-top: 1.25rem;
+  }
+}
+
+.restText {
+  // Desktop: always visible
+}
+
 .readMoreBtn {
   display: none;
 }
 
-// Tablet
-@media (max-width: 1024px) {
+// ─── Responsive ───
+
+@media (max-width: 1250px) {
   .about {
-    padding: 4rem 4rem;
-    grid-gap: 3rem;
+    padding: 5rem 4rem;
   }
 
-  .header {
+  .sectionTitle {
+    font-size: 2.2rem;
+  }
+
+  .content {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about {
+    padding: 4rem 3rem;
+  }
+
+  .sectionTitle {
     font-size: 2rem;
   }
 
   .text {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 
-// Mobile
 @media (max-width: 768px) {
   .about {
-    grid-template-columns: 1fr;
     padding: 4rem 2rem;
-    grid-gap: 2rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.6rem;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .image {
     max-width: 400px;
     margin: 0 auto;
-  }
-
-  .header {
-    font-size: 1.6rem;
+    display: block;
   }
 
   .text {
-    font-size: 1rem;
+    font-size: 0.95rem;
     line-height: 1.7;
   }
 
-  .textClamped {
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+  .restText {
+    display: none;
+
+    &.expanded {
+      display: block;
+    }
   }
 
   .readMoreBtn {
@@ -101,21 +197,24 @@
   }
 }
 
-// Small mobile
-@media (max-width: 1250px) {
+@media (max-width: 480px) {
   .about {
-    padding: 3rem 1.5rem;
+    padding: 3rem 1.25rem;
   }
 
-  .image {
-    max-width: 500px;
-  }
-
-  .header {
+  .sectionTitle {
     font-size: 1.4rem;
   }
 
+  .sectionLabel {
+    font-size: 0.75rem;
+  }
+
+  .image {
+    max-width: 320px;
+  }
+
   .text {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 }

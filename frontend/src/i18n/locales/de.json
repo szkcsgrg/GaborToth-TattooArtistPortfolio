@@ -25,6 +25,88 @@
     "title": "Über mich",
     "readMore": "Weiterlesen",
     "readLess": "Weniger anzeigen",
-    "text": "Ich bin Gábor Tóth, der Schöpfer und Besitzer von TG Art Tattoo. Ich bin seit 2018 in der Branche tätig, aber erst 2023 habe ich mein eigenes Tattoostudio in Zalaegerszeg eröffnet. Anfangs versuchte ich, neben der Arbeit zu lernen und zu üben, aber im Laufe der Zeit wurde das nicht mehr tragbar, und ich begann, mein eigenes Geschäft aufzubauen. Seitdem bemühe ich mich mit viel mehr Einsatz, immer besser zu sein und mich kontinuierlich zu verbessern, damit ich euch jeden Tag qualitativ hochwertige Tattoos kreieren kann. In den letzten Jahren habe ich mehrere Erfolge erzielt, aber ich habe nie das Gefühl, dass ich aufhören könnte; ich suche immer nach neuen Zielen und Herausforderungen. Im Laufe der Jahre habe ich mich in mehreren Stilen ausprobiert, aber es war spät, dass sich wirklich herauskristallisierte, was meine Richtung ist. Ich bewege mich hauptsächlich in der Sketch- und Fineline-Linie, innerhalb derer ich besonders gerne in Horror-, Tier- und Pflanzenthemen kreiere, aber ich breite auch gerne meine Flügel in der Welt des Realismus aus. Für mich sind meine Kunden am wichtigsten, und ich möchte ihnen das Beste bieten, also versuche ich, in mehreren Stilen mithalten zu können. Ich glaube, dass jedes Tattoo Bedeutung und eine Geschichte hat, deshalb bin ich unbeschreiblich dankbar für jede Person, die mich wählt, denn ohne sie wäre ich nicht da, wo ich bin! Für mich ist das Ganze nicht nur Arbeit, sondern auch Leidenschaft!"
+    "paragraphs": [
+      "Ich bin Gábor Tóth, der Schöpfer und Besitzer von TG Art Tattoo. Ich bin seit 2018 in der Branche tätig, aber erst 2023 habe ich mein eigenes Tattoostudio in Zalaegerszeg eröffnet.",
+      "Anfangs versuchte ich, neben der Arbeit zu lernen und zu üben, aber im Laufe der Zeit wurde das nicht mehr tragbar, und ich begann, mein eigenes Geschäft aufzubauen. Seitdem bemühe ich mich mit viel mehr Einsatz, immer besser zu sein und mich kontinuierlich zu verbessern, damit ich euch jeden Tag qualitativ hochwertige Tattoos kreieren kann. In den letzten Jahren habe ich mehrere Erfolge erzielt, aber ich habe nie das Gefühl, dass ich aufhören könnte; ich suche immer nach neuen Zielen und Herausforderungen.",
+      "Im Laufe der Jahre habe ich mich in mehreren Stilen ausprobiert, aber es war spät, dass sich wirklich herauskristallisierte, was meine Richtung ist. Ich bewege mich hauptsächlich in der Sketch- und Fineline-Linie, innerhalb derer ich besonders gerne in Horror-, Tier- und Pflanzenthemen kreiere, aber ich breite auch gerne meine Flügel in der Welt des Realismus aus.",
+      "Für mich sind meine Kunden am wichtigsten, und ich möchte ihnen das Beste bieten, also versuche ich, in mehreren Stilen mithalten zu können. Ich glaube, dass jedes Tattoo Bedeutung und eine Geschichte hat, deshalb bin ich unbeschreiblich dankbar für jede Person, die mich wählt, denn ohne sie wäre ich nicht da, wo ich bin! Für mich ist das Ganze nicht nur Arbeit, sondern auch Leidenschaft!"
+    ]
+  },
+  "services": {
+    "title": "Dienstleistungen",
+    "description": "Jedes Tattoo ist ein einzigartiges, individuelles Kunstwerk, das die Persönlichkeit und Geschichte des Trägers widerspiegelt. Meine Dienstleistungen umfassen Folgendes:",
+    "tattooing": {
+      "title": "Tätowierung",
+      "description": "Individuelle, personalisierte Tattoos in professioneller Umgebung. Ich arbeite in den Stilen Sketch, Fineline, Blackwork und Realismus – jedes Werk ist ein einzigartiges Kunstwerk."
+    },
+    "customDesign": {
+      "title": "Individuelles Design",
+      "description": "Ich erstelle einzigartige, personalisierte Designs, die die Persönlichkeit und den Geschmack des Kunden widerspiegeln."
+    },
+    "logoDesign": {
+      "title": "Logo- / Grafikdesign",
+      "description": "Ich entwerfe individuelle Logos und Grafiken, die den Bedürfnissen und dem Stil des Kunden entsprechen."
+    },
+    "cdCoverDesign": {
+      "title": "CD-Cover-Design",
+      "description": "Ich entwerfe individuelle CD-Cover, die den Stil des Künstlers oder Unternehmens widerspiegeln."
+    },
+    "digitalDrawing": {
+      "title": "Digitale Zeichnung",
+      "description": "Ich erstelle individuelle digitale Zeichnungen, die den Bedürfnissen und dem Stil des Kunden entsprechen."
+    }
+  },
+  "galleryPreview": {
+    "title": "Galerie",
+    "description": "Ein Einblick in meine Arbeit – jedes Tattoo erzählt eine einzigartige Geschichte.",
+    "viewAll": "Vollständige Galerie ansehen"
+  },
+  "reviews": {
+    "title": "Bewertungen",
+    "description": "Was meine Kunden über mich sagen – ihre Zufriedenheit ist die größte Anerkennung.",
+    "translatedFrom": "Aus dem Ungarischen übersetzt",
+    "items": {
+      "1": {
+        "text": "Ich empfehle Gábor von ganzem Herzen jedem. Ich wünsche jedem ein solches erstes Tattoo-Erlebnis. Die Atmosphäre war super, eine sehr angenehme und geschmackvolle Umgebung. Hilfsbereit und freundlich. Ich bereue es keine Sekunde, ihn gewählt zu haben, und werde mich für meine zukünftigen Tattoos sicher auch an ihn wenden."
+      },
+      "2": {
+        "text": "Der Tattoo-Künstler ist sehr talentiert und kreativ. Ich habe bisher 2 Tattoos von ihm und beide sind perfekte, sorgfältige Arbeit. Außerdem ist er sehr fair, cool und geduldig. Ich kann es kaum erwarten, ein weiteres Tattoo von ihm zu bekommen!"
+      },
+      "3": {
+        "text": "Ich bin sehr zufrieden. Er ist zugänglich und freundlich, so vergehen die Sitzungen immer in guter Stimmung. Er ist präzise und achtet auf jedes kleine Detail, was man am fertigen Tattoo auch sieht. Ich empfehle ihn von Herzen jedem, der qualitativ hochwertige Arbeit möchte!"
+      }
+    }
+  },
+  "cta": {
+    "title": "Bereit für dein einzigartiges Tattoo?",
+    "description": "Nimm Kontakt mit mir auf und lass uns deine Ideen besprechen. Jedes Tattoo ist eine gemeinsame Kreation – ich freue mich auf dich!",
+    "button": "Kontakt aufnehmen"
+  },
+  "gallery": {
+    "label": "Portfolio",
+    "title": "Galerie",
+    "description": "Entdecke meine Arbeiten – jedes Tattoo erzählt eine einzigartige Geschichte.",
+    "empty": "Keine Ergebnisse in dieser Kategorie.",
+    "filters": {
+      "all": "Alle",
+      "fineline": "Fineline",
+      "blackwork": "Blackwork",
+      "realism": "Realismus",
+      "minimal": "Minimal",
+      "sketch": "Sketch",
+      "abstract": "Abstrakt"
+    }
+  },
+  "footer": {
+    "navigation": "Navigation",
+    "contact": "Kontakt",
+    "social": "Soziale Medien",
+    "documents": "Dokumente",
+    "rights": "Alle Rechte vorbehalten.",
+    "docs": {
+      "termsPrivacy": "AGB & Datenschutz",
+      "consent": "Einverständniserklärung",
+      "parentalConsent": "Elterliche Einverständniserklärung"
+    }
   }
 }

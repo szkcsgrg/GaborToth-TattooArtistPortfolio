@@ -8,7 +8,7 @@
   --color-border: #494949;
   --color-accent: #fafafa;
 
-  --font-sans: 'Montserrat', system-ui, -apple-system, sans-serif;
+  --font-sans: 'Geist', system-ui, -apple-system, sans-serif;
 
   --spacing-nav-height: 5rem;
 }
@@ -36,4 +36,9 @@ a {
 img {
   max-width: 100%;
   display: block;
+}
+
+::selection {
+  color: var(--color-bg-secondary); 
+  background-color: var(--color-text-primary);
 }

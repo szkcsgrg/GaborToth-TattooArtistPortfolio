@@ -25,6 +25,77 @@
     "title": "Rólam",
     "readMore": "Tovább olvasom",
     "readLess": "Kevesebb",
-    "text": "Tóth Gábor vagyok, a TG Art Tattoo megálmodója, és tulajdonosa. 2018 óta vagyok jelen a szakmában, de csak 2023-ban nyitottam meg a saját tetováló szalonomat Zalaegerszegen. Elinte munka mellett próbáltam tanulni, gyakorolni, de idővel ez már nem volt fenntartható, és elkezdtem a saját vállalkozásomat építeni. Azóta sokkal nagyobb erőbedobással igyekszem mindig jobb és jobb lenni, folyamatosan fejlődni, hogy minőségi tetoválásokat készíthessek nektek nap, mint nap. Az elmúlt években több sikert is elkönyvelhettem, de sosem érzem úgy, hogy meg lehet állni, mindig keresem az új célokat, kihívásokat. Az évek alatt több stílusban is kipróbáltam magamat, de későn kezdett igazán körvonalazódni, hogy mi is az irányzatom. Leginkább a sketch és a fineline vonalon mozgok, ezenbelül is a horror, az állatok, illetve a növény-témájú mintákban szeretek alkotni, viszont szívesen bontogatom a szárnyaim a realizmus világában is.  Nekem a vendégeim a legfontosabbak, és szeretném számukra a legjobbat nyújtani, ezért próbálok több stílusban is helytállni. Hiszem, hogy minden tetoválásnak jelentése, története van, így minden egyes emberért, aki engem választ, elmondhatatlanul hálás vagyok, hisz nélkülük nem tartanék ott, ahol! Ez az egész számomra nem csak munka, hanem szenvedély is!"
+    "paragraphs": [
+      "Tóth Gábor vagyok, a TG Art Tattoo megálmodója és tulajdonosa. 2018 óta vagyok jelen a szakmában, de csak 2023-ban nyitottam meg a saját tetováló szalonomat Zalaegerszegen.",
+      "Eleinte munka mellett próbáltam tanulni, gyakorolni, de idővel ez már nem volt fenntartható, és elkezdtem a saját vállalkozásomat építeni. Azóta sokkal nagyobb erőbedobással igyekszem mindig jobb és jobb lenni, folyamatosan fejlődni, hogy minőségi tetoválásokat készíthessek nektek nap, mint nap. Az elmúlt években több sikert is elkönyvelhettem, de sosem érzem úgy, hogy meg lehet állni, mindig keresem az új célokat, kihívásokat.",
+      "Az évek alatt több stílusban is kipróbáltam magamat, de későn kezdett igazán körvonalazódni, hogy mi is az irányzatom. Leginkább a sketch és a fineline vonalon mozgok, ezenbelül is a horror, az állatok, illetve a növény-témájú mintákban szeretek alkotni, viszont szívesen bontogatom a szárnyaim a realizmus világában is.",
+      "Nekem a vendégeim a legfontosabbak, és szeretném számukra a legjobbat nyújtani, ezért próbálok több stílusban is helytállni. Hiszem, hogy minden tetoválásnak jelentése, története van, így minden egyes emberért, aki engem választ, elmondhatatlanul hálás vagyok, hisz nélkülük nem tartanék ott, ahol! Ez az egész számomra nem csak munka, hanem szenvedély is!"
+    ]
+  },
+  "services": {
+    "title": "Szolgáltatások",
+    "description": "Minden tetoválás egyedi, személyre szabott műalkotás, amely tükrözi a viselője egyéniségét és történetét. Szolgáltatásaim között szerepelnek a következők:",
+    "tattooing": {
+      "title": "Tetoválás",
+      "description": "Egyedi, személyre szabott tetoválások készítése professzionális körülmények között. Sketch, fineline, blackwork és realista stílusokban dolgozom, minden munkám egyedi műalkotás."
+    },
+    "customDesign": {
+      "title": "Egyedi Minta Készítése",
+      "description": "Egyedi, személyre szabott mintákat készítek, amelyek tükrözik az ügyfél egyéniségét és ízlését."
+    },
+    "logoDesign": {
+      "title": "Egyedi Logo / Grafika Tervezés",
+      "description": "Egyedi logókat és grafikákat tervezek, amelyek megfelelnek az ügyfél igényeinek és stílusának."
+    },
+    "cdCoverDesign": {
+      "title": "CD Borító Tervezés",
+      "description": "Egyedi CD borítókat tervezek, amelyek tükrözik a művész vagy cég stílusát."
+    },
+    "digitalDrawing": {
+      "title": "Digitális Rajz Tervezés",
+      "description": "Egyedi digitális rajzokat készítek, amelyek megfelelnek az ügyfél igényeinek és stílusának."
+    }
+  },
+  "galleryPreview": {
+    "title": "Galéria",
+    "description": "Ízelítő a munkáimból – minden tetoválás egyedi történetet mesél el.",
+    "viewAll": "Teljes galéria megtekintése"
+  },
+  "reviews": {
+    "title": "Vélemények",
+    "description": "Amit vendégeim mondanak rólam – az ő elégedettségük a legnagyobb elismerés.",
+    "translatedFrom": "Magyarról fordítva"
+  },
+  "cta": {
+    "title": "Készen állsz az egyedi tetoválásodra?",
+    "description": "Vedd fel velem a kapcsolatot, és beszéljük meg az elképzeléseidet. Minden tetoválás egy közös alkotás – várlak szeretettel!",
+    "button": "Kapcsolatfelvétel"
+  },
+  "gallery": {
+    "label": "Portfólió",
+    "title": "Galéria",
+    "description": "Fedezd fel a munkáimat – minden tetoválás egyedi történetet mesél el.",
+    "empty": "Nincs találat ebben a kategóriában.",
+    "filters": {
+      "all": "Összes",
+      "fineline": "Fineline",
+      "blackwork": "Blackwork",
+      "realism": "Realizmus",
+      "minimal": "Minimál",
+      "sketch": "Sketch",
+      "abstract": "Absztrakt"
+    }
+  },
+  "footer": {
+    "navigation": "Navigáció",
+    "contact": "Kapcsolat",
+    "social": "Közösségi média",
+    "documents": "Dokumentumok",
+    "rights": "Minden jog fenntartva.",
+    "docs": {
+      "termsPrivacy": "ÁSZF & Adatvédelem",
+      "consent": "Beleegyező nyilatkozat",
+      "parentalConsent": "Szülői beleegyező nyilatkozat"
+    }
   }
 }

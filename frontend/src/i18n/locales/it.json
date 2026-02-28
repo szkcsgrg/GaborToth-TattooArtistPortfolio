@@ -25,6 +25,88 @@
     "title": "Chi sono",
     "readMore": "Leggi di più",
     "readLess": "Mostra meno",
-    "text": " Sono Tóth Gábor, creatore e proprietario di TG Art Tattoo. Sono presente nel settore dal 2018, ma ho aperto il mio studio di tatuaggi a Zalaegerszeg solo nel 2023. Inizialmente cercavo di imparare e praticare mentre lavoravo, ma col tempo non è stato più sostenibile, così ho iniziato a costruire la mia attività. Da allora, mi impegno con maggiore dedizione per essere sempre migliore e migliorare continuamente, in modo da poter creare tatuaggi di qualità per voi ogni giorno. Negli ultimi anni ho ottenuto diversi successi, ma non mi sento mai come se potessi fermarmi, cerco sempre nuovi obiettivi e sfide. Nel corso degli anni ho provato diversi stili, ma è stato solo più tardi che ho iniziato a delineare davvero la mia direzione. Mi muovo principalmente nella linea sketch e fineline, e mi piace creare soprattutto nei temi horror, animali e piante, ma mi piace anche esplorare il mondo del realismo. Per me i miei clienti sono i più importanti e voglio offrire loro il meglio, quindi cerco di essere all'altezza in più stili. Credo che ogni tatuaggio abbia un significato e una storia, quindi sono indescrivibilmente grato a ogni persona che mi sceglie, perché senza di loro non sarei dove sono! Per me tutto questo non è solo lavoro, ma anche passione!"
+    "paragraphs": [
+      "Sono Tóth Gábor, creatore e proprietario di TG Art Tattoo. Sono presente nel settore dal 2018, ma ho aperto il mio studio di tatuaggi a Zalaegerszeg solo nel 2023.",
+      "Inizialmente cercavo di imparare e praticare mentre lavoravo, ma col tempo non è stato più sostenibile, così ho iniziato a costruire la mia attività. Da allora, mi impegno con maggiore dedizione per essere sempre migliore e migliorare continuamente, in modo da poter creare tatuaggi di qualità per voi ogni giorno. Negli ultimi anni ho ottenuto diversi successi, ma non mi sento mai come se potessi fermarmi, cerco sempre nuovi obiettivi e sfide.",
+      "Nel corso degli anni ho provato diversi stili, ma è stato solo più tardi che ho iniziato a delineare davvero la mia direzione. Mi muovo principalmente nella linea sketch e fineline, e mi piace creare soprattutto nei temi horror, animali e piante, ma mi piace anche esplorare il mondo del realismo.",
+      "Per me i miei clienti sono i più importanti e voglio offrire loro il meglio, quindi cerco di essere all'altezza in più stili. Credo che ogni tatuaggio abbia un significato e una storia, quindi sono indescrivibilmente grato a ogni persona che mi sceglie, perché senza di loro non sarei dove sono! Per me tutto questo non è solo lavoro, ma anche passione!"
+    ]
+  },
+  "services": {
+    "title": "Servizi",
+    "description": "Ogni tatuaggio è un'opera d'arte unica e personalizzata che riflette la personalità e la storia di chi lo indossa. I miei servizi includono:",
+    "tattooing": {
+      "title": "Tatuaggio",
+      "description": "Tatuaggi personalizzati e unici creati in un ambiente professionale. Lavoro negli stili sketch, fineline, blackwork e realismo — ogni pezzo è un'opera d'arte unica."
+    },
+    "customDesign": {
+      "title": "Design Personalizzato",
+      "description": "Creo design unici e personalizzati che riflettono la personalità e il gusto del cliente."
+    },
+    "logoDesign": {
+      "title": "Design Logo / Grafica",
+      "description": "Progetto loghi e grafiche personalizzate su misura per le esigenze e lo stile del cliente."
+    },
+    "cdCoverDesign": {
+      "title": "Design Copertina CD",
+      "description": "Progetto copertine CD personalizzate che riflettono lo stile dell'artista o dell'azienda."
+    },
+    "digitalDrawing": {
+      "title": "Disegno Digitale",
+      "description": "Creo disegni digitali personalizzati su misura per le esigenze e lo stile del cliente."
+    }
+  },
+  "galleryPreview": {
+    "title": "Galleria",
+    "description": "Un assaggio del mio lavoro – ogni tatuaggio racconta una storia unica.",
+    "viewAll": "Vedi la galleria completa"
+  },
+  "reviews": {
+    "title": "Recensioni",
+    "description": "Cosa dicono i miei clienti su di me – la loro soddisfazione è il più grande riconoscimento.",
+    "translatedFrom": "Tradotto dall'ungherese",
+    "items": {
+      "1": {
+        "text": "Raccomando Gábor a tutti con tutto il cuore. Auguro a tutti un'esperienza del primo tatuaggio come questa. L'atmosfera era fantastica, un ambiente molto piacevole e curato. Disponibile e amichevole. Non me ne sono pentita un secondo, e per i miei prossimi tatuaggi mi rivolgerò sicuramente a lui."
+      },
+      "2": {
+        "text": "L'artista del tatuaggio è molto talentuoso e creativo. Finora ho 2 tatuaggi da lui ed entrambi sono un lavoro perfetto e meticoloso. È anche molto corretto, simpatico e paziente. Non vedo l'ora di farmi un altro tatuaggio da lui!"
+      },
+      "3": {
+        "text": "Sono molto soddisfatto. È alla mano e amichevole, quindi le sessioni passano sempre di buon umore. È preciso e presta attenzione a ogni piccolo dettaglio, il che si vede nel tatuaggio finito. Lo raccomando di cuore a tutti quelli che vogliono un lavoro di qualità!"
+      }
+    }
+  },
+  "cta": {
+    "title": "Pronto per il tuo tatuaggio unico?",
+    "description": "Contattami e parliamo delle tue idee. Ogni tatuaggio è una creazione condivisa – ti aspetto!",
+    "button": "Contattami"
+  },
+  "gallery": {
+    "label": "Portfolio",
+    "title": "Galleria",
+    "description": "Esplora i miei lavori – ogni tatuaggio racconta una storia unica.",
+    "empty": "Nessun risultato in questa categoria.",
+    "filters": {
+      "all": "Tutti",
+      "fineline": "Fineline",
+      "blackwork": "Blackwork",
+      "realism": "Realismo",
+      "minimal": "Minimale",
+      "sketch": "Sketch",
+      "abstract": "Astratto"
+    }
+  },
+  "footer": {
+    "navigation": "Navigazione",
+    "contact": "Contatto",
+    "social": "Social Media",
+    "documents": "Documenti",
+    "rights": "Tutti i diritti riservati.",
+    "docs": {
+      "termsPrivacy": "Termini e Privacy",
+      "consent": "Modulo di consenso",
+      "parentalConsent": "Consenso dei genitori"
+    }
   }
 }
