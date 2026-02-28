@@ -87,6 +87,7 @@
     "title": "Galleria",
     "description": "Esplora i miei lavori – ogni tatuaggio racconta una storia unica.",
     "empty": "Nessun risultato in questa categoria.",
+    "scrollHint": "Scorri verso l'alto per sfogliare",
     "filters": {
       "all": "Tutti",
       "fineline": "Fineline",

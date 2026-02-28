@@ -76,6 +76,7 @@
     "title": "Galéria",
     "description": "Fedezd fel a munkáimat – minden tetoválás egyedi történetet mesél el.",
     "empty": "Nincs találat ebben a kategóriában.",
+    "scrollHint": "Húzd felfelé a böngészéshez",
     "filters": {
       "all": "Összes",
       "fineline": "Fineline",

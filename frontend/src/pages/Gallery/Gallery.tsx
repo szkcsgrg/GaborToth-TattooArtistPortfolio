@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 
 import tattoo1 from '../../assets/images/gallery/tattoo1.jpg'
@@ -114,6 +114,26 @@ export default function Gallery() {
     </>
   )
 
+  // ─── Scroll hint for mobile ───
+  const [showScrollHint, setShowScrollHint] = useState(true)
+  const reelsRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    if (!isMobile || !showScrollHint) return
+
+    const timer = setTimeout(() => setShowScrollHint(false), 3500)
+
+    const container = reelsRef.current
+    const handleScroll = () => setShowScrollHint(false)
+
+    container?.addEventListener('scroll', handleScroll, { once: true, passive: true })
+
+    return () => {
+      clearTimeout(timer)
+      container?.removeEventListener('scroll', handleScroll)
+    }
+  }, [isMobile, showScrollHint])
+
   // ─── Mobile: Reels layout ───
   if (isMobile) {
     return (
@@ -122,7 +142,19 @@ export default function Gallery() {
           {filterButtons}
         </div>
 
-        <div className={styles.reelsContainer}>
+        <div className={styles.reelsContainer} ref={reelsRef}>
+          {/* Scroll hint overlay */}
+          {showScrollHint && filtered.length > 1 && (
+            <div className={styles.scrollHint}>
+              <div className={styles.scrollHintArrow}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="18 15 12 9 6 15" />
+                </svg>
+              </div>
+              <span className={styles.scrollHintText}>{t('gallery.scrollHint')}</span>
+            </div>
+          )}
+
           {filtered.length === 0 ? (
             <div className={styles.reelItem}>
               <p className={styles.empty}>{t('gallery.empty')}</p>

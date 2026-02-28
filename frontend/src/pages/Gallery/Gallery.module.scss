@@ -221,6 +221,7 @@
 }
 
 .reelsContainer {
+  position: relative;
   height: calc(100vh - var(--spacing-nav-height) - 3.5rem);
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
@@ -264,6 +265,60 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--color-text-primary);
+}
+
+// ─── Scroll hint ───
+.scrollHint {
+  position: absolute;
+  bottom: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 15;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  animation: scrollHintFade 3.5s ease forwards;
+  pointer-events: none;
+}
+
+.scrollHintArrow {
+  color: var(--color-text-primary);
+  animation: scrollBounce 1.2s ease-in-out infinite;
+}
+
+.scrollHintText {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
+}
+
+@keyframes scrollBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes scrollHintFade {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 // ─── Mobile gallery wrapper ───
