@@ -32,7 +32,7 @@ export default function Footer() {
         <div className={styles.column}>
           <h3 className={styles.columnTitle}>{t('footer.contact')}</h3>
           <div className={styles.links}>
-            <a href="mailto:tgarttattoo@gmail.com">tgarttattoo@gmail.com</a>
+            <a href="mailto:info@tgarttattoo.com">info@tgarttattoo.com</a>
             <a href="tel:+36301234567">+36 30 123 4567</a>
             <Link to="/contact">Zalaegerszeg, Hungary</Link>
           </div>

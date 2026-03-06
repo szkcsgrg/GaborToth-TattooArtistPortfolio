@@ -121,7 +121,7 @@ export default function Gallery() {
   useEffect(() => {
     if (!isMobile || !showScrollHint) return
 
-    const timer = setTimeout(() => setShowScrollHint(false), 3500)
+    const timer = setTimeout(() => setShowScrollHint(false), 6500)
 
     const container = reelsRef.current
     const handleScroll = () => setShowScrollHint(false)

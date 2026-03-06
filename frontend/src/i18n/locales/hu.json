@@ -87,6 +87,103 @@
       "abstract": "Absztrakt"
     }
   },
+  "contactInfo": {
+    "infoLabel": "Tudnivalók",
+    "infoTitle": "Információk",
+    "infoDescription": "Gyakran ismételt kérdések – minden, amit a tetoválás előtt tudnod kell.",
+    "docsTitle": "Dokumentumok",
+    "contactLabel": "Elérhetőség",
+    "contactTitle": "Kapcsolat",
+    "contactDescription": "Keress meg bátran, és beszéljük meg az elképzeléseidet!",
+    "faq": {
+      "0": {
+        "q": "Hogyan tudok időpontot foglalni?",
+        "a": "Időpontot Instagramon, Facebookon vagy e-mailben tudsz foglalni. Írd le az elképzeléseidet, a kívánt méretet, testrészt, és küldj referencia képeket, ha van. Ezután egyeztetjük a részleteket és a lehetséges időpontokat."
+      },
+      "1": {
+        "q": "Mennyibe kerül egy tetoválás?",
+        "a": "Az ár minden esetben egyedi, függ a mérettől, a részletességtől, a testrész nehézségétől és az elkészítési időtől. Az árajánlatot az egyeztetés során kapod meg, miután megbeszéltük az elképzeléseidet."
+      },
+      "2": {
+        "q": "Kell-e előleget fizetni?",
+        "a": "Igen, az időpont lefoglalásakor előleget kérek, ami a végleges árba beleszámít. Ez biztosítja az időpontodat és a minta elkészítéséhez szükséges munkámat."
+      },
+      "3": {
+        "q": "Hogyan készüljek fel a tetoválásra?",
+        "a": "Jól aludj ki az előző éjszaka, egyél rendesen a tetoválás előtt, és igyál sok vizet. Kerüld az alkoholt és a vérhígítókat legalább 24 órával korábban. Kényelmes, a tetoválni kívánt testrészt könnyen hozzáférhetővé tévő ruhát viselj."
+      },
+      "4": {
+        "q": "Hogyan zajlik az első konzultáció?",
+        "a": "Az első konzultáció során megbeszéljük az elképzeléseidet, a kívánt stílust, méretet és testrészt. Referencia képeket is megvizsgálunk, és közösen kialakítjuk a végleges koncepciót. A mintát az időpont előtt küldöm el jóváhagyásra."
+      },
+      "5": {
+        "q": "Milyen stílusokban dolgozol?",
+        "a": "Leginkább sketch és fineline stílusban dolgozom, de szívesen vállalok blackwork, minimál és realista munkákat is. Nézd meg a galériámat, hogy képet kapj a stílusomról, és ha bizonytalan vagy, keress meg bátran – együtt kitaláljuk!"
+      },
+      "6": {
+        "q": "Mennyire fájdalmas a tetoválás?",
+        "a": "A fájdalomérzet egyénenként és testrészenként változik. A csontos, vékony bőrű területek (boka, borda, csukló) érzékenyebbek, míg az izmos, húsos részek (felkar, comb) kevésbé fájdalmasak. A legtöbb vendégem jól tolerálja a folyamatot."
+      },
+      "7": {
+        "q": "Hogyan kell ápolni a friss tetoválást?",
+        "a": "A tetoválás után részletes ápolási útmutatót adok. Általánosságban: tartsd tisztán, kend be a megadott krémmel, kerüld a napozást, úszást és az izzadást az első 2-3 hétben. A gyógyulás során ne vakard, ne tépd le a hámlást."
+      },
+      "8": {
+        "q": "Hány éves kortól vállalsz tetoválást?",
+        "a": "18 éves kor alatt szülői beleegyező nyilatkozattal vállalok tetoválást. A nyilatkozat letölthető a Dokumentumok fülről. 18 év felett nincs korlátozás."
+      },
+      "9": {
+        "q": "Lehet-e meglévő tetoválást javítani vagy átdolgozni?",
+        "a": "Igen, vállalok cover-up munkákat és meglévő tetoválások felfrissítését is. Küldj fotót a jelenlegi tetoválásról, hogy felmérhessem a lehetőségeket és árajánlatot adhassak."
+      }
+    },
+    "docs": {
+      "termsPrivacy": "ÁSZF & Adatvédelem",
+      "consent": "Beleegyező nyilatkozat",
+      "parentalConsent": "Szülői beleegyező nyilatkozat"
+    },
+    "form": {
+      "name": "Név",
+      "namePlaceholder": "A neved",
+      "email": "E-mail",
+      "emailPlaceholder": "Az e-mail címed",
+      "size": "Méret",
+      "sizePlaceholder": "Válassz méretet",
+      "sizes": {
+        "small": "Kicsi (max. 5 cm)",
+        "medium": "Közepes (5–15 cm)",
+        "large": "Nagy (15–30 cm)",
+        "xlarge": "Extra nagy (30 cm+)"
+      },
+      "bodyPart": "Testrész",
+      "bodyPartPlaceholder": "Válassz testrészt",
+      "bodyParts": {
+        "forearm": "Alkar",
+        "upperArm": "Felkar",
+        "fullSleeve": "Teljes kar",
+        "shoulder": "Váll",
+        "chest": "Mellkas",
+        "ribs": "Borda",
+        "upperBack": "Felső hát",
+        "lowerBack": "Alsó hát",
+        "thigh": "Comb",
+        "calf": "Lábszár",
+        "ankle": "Boka",
+        "wrist": "Csukló",
+        "neck": "Nyak",
+        "hand": "Kéz",
+        "other": "Egyéb"
+      },
+      "referenceImage": "Referencia kép",
+      "uploadPrompt": "Kattints a kép kiválasztásához",
+      "description": "Leírás",
+      "descriptionPlaceholder": "Írd le az elképzeléseidet, a kívánt stílust, részleteket...",
+      "submit": "Kérés elküldése",
+      "sending": "Küldés...",
+      "successMessage": "Köszönjük! A konzultációs kérésedet sikeresen elküldtük. Hamarosan válaszolunk!",
+      "errorGeneric": "Hiba történt a küldés során. Kérjük, próbáld újra később."
+    }
+  },
   "footer": {
     "navigation": "Navigáció",
     "contact": "Kapcsolat",

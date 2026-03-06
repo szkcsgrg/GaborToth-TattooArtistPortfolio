@@ -98,6 +98,103 @@
       "abstract": "Astratto"
     }
   },
+  "contactInfo": {
+    "infoLabel": "Da sapere",
+    "infoTitle": "Informazioni",
+    "infoDescription": "Domande frequenti – tutto quello che devi sapere prima del tuo tatuaggio.",
+    "docsTitle": "Documenti",
+    "contactLabel": "Contattami",
+    "contactTitle": "Contatto",
+    "contactDescription": "Contattami e parliamo delle tue idee!",
+    "faq": {
+      "0": {
+        "q": "Come posso prenotare un appuntamento?",
+        "a": "Puoi prenotare un appuntamento tramite Instagram, Facebook o e-mail. Descrivi le tue idee, la dimensione desiderata, la parte del corpo e invia immagini di riferimento se ne hai. Poi discuteremo i dettagli e le date disponibili."
+      },
+      "1": {
+        "q": "Quanto costa un tatuaggio?",
+        "a": "Il prezzo è sempre individuale, dipende dalla dimensione, dal livello di dettaglio, dalla difficoltà della parte del corpo e dal tempo necessario. Riceverai un preventivo durante la nostra consultazione dopo aver discusso le tue idee."
+      },
+      "2": {
+        "q": "Devo pagare un acconto?",
+        "a": "Sì, richiedo un acconto al momento della prenotazione, che viene detratto dal prezzo finale. Questo assicura il tuo appuntamento e copre il lavoro di progettazione."
+      },
+      "3": {
+        "q": "Come devo prepararmi per il tatuaggio?",
+        "a": "Dormi bene la notte prima, mangia bene prima della sessione e bevi molta acqua. Evita alcol e anticoagulanti per almeno 24 ore prima. Indossa abiti comodi che permettano facile accesso all'area da tatuare."
+      },
+      "4": {
+        "q": "Come funziona la prima consultazione?",
+        "a": "Durante la prima consultazione, discutiamo le tue idee, lo stile desiderato, la dimensione e il posizionamento. Esaminiamo le immagini di riferimento e sviluppiamo insieme il concetto finale. Invio il disegno per l'approvazione prima dell'appuntamento."
+      },
+      "5": {
+        "q": "In quali stili lavori?",
+        "a": "Lavoro principalmente in stile sketch e fineline, ma accetto anche lavori blackwork, minimal e realistici. Dai un'occhiata alla mia galleria, e se non sei sicuro, non esitare a contattarmi – lo scopriremo insieme!"
+      },
+      "6": {
+        "q": "Quanto è doloroso un tatuaggio?",
+        "a": "Il livello di dolore varia da persona a persona e in base alla parte del corpo. Le aree ossee con pelle sottile (caviglia, costole, polso) tendono ad essere più sensibili, mentre le aree muscolose (braccio, coscia) sono meno dolorose. La maggior parte dei miei clienti tollera bene il processo."
+      },
+      "7": {
+        "q": "Come devo prendermi cura di un tatuaggio fresco?",
+        "a": "Fornisco istruzioni dettagliate sulla cura dopo la sessione. In generale: mantienilo pulito, applica la crema raccomandata ed evita l'esposizione al sole, il nuoto e la sudorazione per le prime 2-3 settimane. Non grattare o staccare la pelle in guarigione."
+      },
+      "8": {
+        "q": "Qual è l'età minima per un tatuaggio?",
+        "a": "Per i clienti sotto i 18 anni, richiedo un modulo di consenso dei genitori scaricabile dalla scheda Documenti. Non ci sono restrizioni di età per i clienti dai 18 anni in su."
+      },
+      "9": {
+        "q": "Puoi correggere o rielaborare un tatuaggio esistente?",
+        "a": "Sì, faccio lavori di cover-up e rinfresco di tatuaggi esistenti. Inviami una foto del tuo tatuaggio attuale così posso valutare le possibilità e fornirti un preventivo."
+      }
+    },
+    "docs": {
+      "termsPrivacy": "Termini e Privacy",
+      "consent": "Modulo di consenso",
+      "parentalConsent": "Consenso dei genitori"
+    },
+    "form": {
+      "name": "Nome",
+      "namePlaceholder": "Il tuo nome",
+      "email": "Email",
+      "emailPlaceholder": "Il tuo indirizzo email",
+      "size": "Dimensione",
+      "sizePlaceholder": "Seleziona dimensione",
+      "sizes": {
+        "small": "Piccolo (max. 5 cm)",
+        "medium": "Medio (5–15 cm)",
+        "large": "Grande (15–30 cm)",
+        "xlarge": "Extra grande (30 cm+)"
+      },
+      "bodyPart": "Parte del corpo",
+      "bodyPartPlaceholder": "Seleziona parte del corpo",
+      "bodyParts": {
+        "forearm": "Avambraccio",
+        "upperArm": "Braccio",
+        "fullSleeve": "Manica completa",
+        "shoulder": "Spalla",
+        "chest": "Petto",
+        "ribs": "Costole",
+        "upperBack": "Parte superiore schiena",
+        "lowerBack": "Parte inferiore schiena",
+        "thigh": "Coscia",
+        "calf": "Polpaccio",
+        "ankle": "Caviglia",
+        "wrist": "Polso",
+        "neck": "Collo",
+        "hand": "Mano",
+        "other": "Altro"
+      },
+      "referenceImage": "Immagine di riferimento",
+      "uploadPrompt": "Clicca per selezionare un'immagine",
+      "description": "Descrizione",
+      "descriptionPlaceholder": "Descrivi le tue idee, lo stile desiderato, i dettagli...",
+      "submit": "Invia richiesta",
+      "sending": "Invio in corso...",
+      "successMessage": "Grazie! La tua richiesta di consultazione è stata inviata con successo. Ti risponderemo presto!",
+      "errorGeneric": "Si è verificato un errore durante l'invio. Riprova più tardi."
+    }
+  },
   "footer": {
     "navigation": "Navigazione",
     "contact": "Contatto",

@@ -98,6 +98,103 @@
       "abstract": "Abstract"
     }
   },
+  "contactInfo": {
+    "infoLabel": "Good to Know",
+    "infoTitle": "Information",
+    "infoDescription": "Frequently asked questions – everything you need to know before your tattoo.",
+    "docsTitle": "Documents",
+    "contactLabel": "Get in Touch",
+    "contactTitle": "Contact",
+    "contactDescription": "Reach out and let's discuss your ideas!",
+    "faq": {
+      "0": {
+        "q": "How can I book an appointment?",
+        "a": "You can book an appointment via Instagram, Facebook, or email. Describe your ideas, desired size, body part, and send reference images if you have any. We'll then discuss the details and available dates."
+      },
+      "1": {
+        "q": "How much does a tattoo cost?",
+        "a": "The price is always individual, depending on the size, detail level, difficulty of the body part, and the time required. You'll receive a quote during our consultation after discussing your ideas."
+      },
+      "2": {
+        "q": "Do I need to pay a deposit?",
+        "a": "Yes, I require a deposit when booking the appointment, which is deducted from the final price. This secures your appointment and covers the design work."
+      },
+      "3": {
+        "q": "How should I prepare for the tattoo?",
+        "a": "Get a good night's sleep, eat well before the session, and drink plenty of water. Avoid alcohol and blood thinners for at least 24 hours beforehand. Wear comfortable clothing that provides easy access to the area being tattooed."
+      },
+      "4": {
+        "q": "How does the initial consultation work?",
+        "a": "During the first consultation, we discuss your ideas, desired style, size, and body placement. We review reference images and develop the final concept together. I send the design for approval before the appointment."
+      },
+      "5": {
+        "q": "What styles do you work in?",
+        "a": "I primarily work in sketch and fineline styles, but I also take on blackwork, minimal, and realistic pieces. Check out my gallery to see my work, and if you're unsure, don't hesitate to reach out – we'll figure it out together!"
+      },
+      "6": {
+        "q": "How painful is getting a tattoo?",
+        "a": "Pain levels vary from person to person and by body part. Bony areas with thin skin (ankle, ribs, wrist) tend to be more sensitive, while muscular, fleshy areas (upper arm, thigh) are less painful. Most of my clients tolerate the process well."
+      },
+      "7": {
+        "q": "How should I care for a fresh tattoo?",
+        "a": "I provide detailed aftercare instructions after the session. In general: keep it clean, apply the recommended cream, and avoid sun exposure, swimming, and sweating for the first 2-3 weeks. Don't scratch or peel the healing skin."
+      },
+      "8": {
+        "q": "What is the minimum age for getting a tattoo?",
+        "a": "For clients under 18, I require a parental consent form which can be downloaded from the Documents tab. There are no age restrictions for clients 18 and older."
+      },
+      "9": {
+        "q": "Can you fix or rework an existing tattoo?",
+        "a": "Yes, I do cover-up work and refreshing of existing tattoos. Send me a photo of your current tattoo so I can assess the possibilities and provide a quote."
+      }
+    },
+    "docs": {
+      "termsPrivacy": "Terms & Privacy",
+      "consent": "Consent Form",
+      "parentalConsent": "Parental Consent Form"
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "Your email address",
+      "size": "Size",
+      "sizePlaceholder": "Select size",
+      "sizes": {
+        "small": "Small (max. 5 cm)",
+        "medium": "Medium (5–15 cm)",
+        "large": "Large (15–30 cm)",
+        "xlarge": "Extra large (30 cm+)"
+      },
+      "bodyPart": "Body Part",
+      "bodyPartPlaceholder": "Select body part",
+      "bodyParts": {
+        "forearm": "Forearm",
+        "upperArm": "Upper Arm",
+        "fullSleeve": "Full Sleeve",
+        "shoulder": "Shoulder",
+        "chest": "Chest",
+        "ribs": "Ribs",
+        "upperBack": "Upper Back",
+        "lowerBack": "Lower Back",
+        "thigh": "Thigh",
+        "calf": "Calf",
+        "ankle": "Ankle",
+        "wrist": "Wrist",
+        "neck": "Neck",
+        "hand": "Hand",
+        "other": "Other"
+      },
+      "referenceImage": "Reference Image",
+      "uploadPrompt": "Click to select an image",
+      "description": "Description",
+      "descriptionPlaceholder": "Describe your ideas, desired style, details...",
+      "submit": "Send request",
+      "sending": "Sending...",
+      "successMessage": "Thank you! Your consultation request has been sent successfully. We'll get back to you soon!",
+      "errorGeneric": "An error occurred while sending. Please try again later."
+    }
+  },
   "footer": {
     "navigation": "Navigation",
     "contact": "Contact",

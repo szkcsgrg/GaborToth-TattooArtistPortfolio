@@ -98,6 +98,103 @@
       "abstract": "Abstrakt"
     }
   },
+  "contactInfo": {
+    "infoLabel": "Wissenswertes",
+    "infoTitle": "Informationen",
+    "infoDescription": "Häufig gestellte Fragen – alles, was du vor deinem Tattoo wissen musst.",
+    "docsTitle": "Dokumente",
+    "contactLabel": "Kontakt aufnehmen",
+    "contactTitle": "Kontakt",
+    "contactDescription": "Nimm Kontakt mit mir auf und lass uns deine Ideen besprechen!",
+    "faq": {
+      "0": {
+        "q": "Wie kann ich einen Termin buchen?",
+        "a": "Du kannst einen Termin über Instagram, Facebook oder E-Mail buchen. Beschreibe deine Vorstellungen, die gewünschte Größe, Körperstelle und sende Referenzbilder, falls vorhanden. Dann besprechen wir die Details und möglichen Termine."
+      },
+      "1": {
+        "q": "Was kostet ein Tattoo?",
+        "a": "Der Preis ist immer individuell und hängt von der Größe, dem Detailgrad, der Schwierigkeit der Körperstelle und der benötigten Zeit ab. Du erhältst ein Angebot während unserer Beratung, nachdem wir deine Vorstellungen besprochen haben."
+      },
+      "2": {
+        "q": "Muss ich eine Anzahlung leisten?",
+        "a": "Ja, bei der Terminbuchung bitte ich um eine Anzahlung, die vom Endpreis abgezogen wird. Diese sichert deinen Termin und deckt die Designarbeit ab."
+      },
+      "3": {
+        "q": "Wie sollte ich mich auf das Tattoo vorbereiten?",
+        "a": "Schlafe gut in der Nacht davor, iss ordentlich vor der Sitzung und trinke viel Wasser. Vermeide Alkohol und Blutverdünner mindestens 24 Stunden vorher. Trage bequeme Kleidung, die den zu tätowierenden Bereich leicht zugänglich macht."
+      },
+      "4": {
+        "q": "Wie läuft die erste Beratung ab?",
+        "a": "Beim ersten Beratungsgespräch besprechen wir deine Vorstellungen, den gewünschten Stil, die Größe und Platzierung. Wir schauen uns Referenzbilder an und entwickeln gemeinsam das endgültige Konzept. Ich sende das Design vor dem Termin zur Genehmigung."
+      },
+      "5": {
+        "q": "In welchen Stilen arbeitest du?",
+        "a": "Ich arbeite hauptsächlich in Sketch und Fineline, übernehme aber auch Blackwork, Minimal und realistische Arbeiten. Schau dir meine Galerie an, und wenn du unsicher bist, melde dich einfach – wir finden es gemeinsam heraus!"
+      },
+      "6": {
+        "q": "Wie schmerzhaft ist ein Tattoo?",
+        "a": "Das Schmerzempfinden variiert von Person zu Person und je nach Körperstelle. Knochige Bereiche mit dünner Haut (Knöchel, Rippen, Handgelenk) sind empfindlicher, während muskulöse Bereiche (Oberarm, Oberschenkel) weniger schmerzhaft sind. Die meisten meiner Kunden vertragen den Prozess gut."
+      },
+      "7": {
+        "q": "Wie pflege ich ein frisches Tattoo?",
+        "a": "Nach der Sitzung gebe ich dir eine detaillierte Pflegeanleitung. Allgemein: Halte es sauber, trage die empfohlene Creme auf und vermeide Sonneneinstrahlung, Schwimmen und Schwitzen in den ersten 2-3 Wochen. Kratze oder schäle die heilende Haut nicht ab."
+      },
+      "8": {
+        "q": "Ab welchem Alter kann man ein Tattoo bekommen?",
+        "a": "Für Kunden unter 18 Jahren benötige ich eine elterliche Einverständniserklärung, die im Reiter Dokumente heruntergeladen werden kann. Für Kunden ab 18 gibt es keine Altersbeschränkung."
+      },
+      "9": {
+        "q": "Kannst du ein bestehendes Tattoo ausbessern oder überarbeiten?",
+        "a": "Ja, ich mache Cover-up-Arbeiten und Auffrischungen bestehender Tattoos. Schick mir ein Foto deines aktuellen Tattoos, damit ich die Möglichkeiten einschätzen und ein Angebot machen kann."
+      }
+    },
+    "docs": {
+      "termsPrivacy": "AGB & Datenschutz",
+      "consent": "Einverständniserklärung",
+      "parentalConsent": "Elterliche Einverständniserklärung"
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Dein Name",
+      "email": "E-Mail",
+      "emailPlaceholder": "Deine E-Mail-Adresse",
+      "size": "Größe",
+      "sizePlaceholder": "Größe wählen",
+      "sizes": {
+        "small": "Klein (max. 5 cm)",
+        "medium": "Mittel (5–15 cm)",
+        "large": "Groß (15–30 cm)",
+        "xlarge": "Extra groß (30 cm+)"
+      },
+      "bodyPart": "Körperstelle",
+      "bodyPartPlaceholder": "Körperstelle wählen",
+      "bodyParts": {
+        "forearm": "Unterarm",
+        "upperArm": "Oberarm",
+        "fullSleeve": "Ganzer Arm",
+        "shoulder": "Schulter",
+        "chest": "Brust",
+        "ribs": "Rippen",
+        "upperBack": "Oberer Rücken",
+        "lowerBack": "Unterer Rücken",
+        "thigh": "Oberschenkel",
+        "calf": "Wade",
+        "ankle": "Knöchel",
+        "wrist": "Handgelenk",
+        "neck": "Nacken",
+        "hand": "Hand",
+        "other": "Andere"
+      },
+      "referenceImage": "Referenzbild",
+      "uploadPrompt": "Klicke, um ein Bild auszuwählen",
+      "description": "Beschreibung",
+      "descriptionPlaceholder": "Beschreibe deine Vorstellungen, gewünschten Stil, Details...",
+      "submit": "Anfrage senden",
+      "sending": "Wird gesendet...",
+      "successMessage": "Vielen Dank! Deine Beratungsanfrage wurde erfolgreich gesendet. Wir melden uns bald bei dir!",
+      "errorGeneric": "Beim Senden ist ein Fehler aufgetreten. Bitte versuche es später erneut."
+    }
+  },
   "footer": {
     "navigation": "Navigation",
     "contact": "Kontakt",

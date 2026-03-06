@@ -44,3 +44,4 @@ npm-debug.log*
 # Local project files
 PROJECT_TRACKER.md
 frontend/README.md
+backend/.env.example
