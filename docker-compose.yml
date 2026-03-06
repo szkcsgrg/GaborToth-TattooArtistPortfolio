@@ -8,6 +8,13 @@ services:
     environment:
       - SECRET_KEY=${SECRET_KEY:-change-me-in-production}
       - FLASK_ENV=${FLASK_ENV:-production}
+      - MAIL_SERVER=${MAIL_SERVER:-smtp.gmail.com}
+      - MAIL_PORT=${MAIL_PORT:-587}
+      - MAIL_USE_TLS=${MAIL_USE_TLS:-true}
+      - MAIL_USERNAME=${MAIL_USERNAME}
+      - MAIL_PASSWORD=${MAIL_PASSWORD}
+      - MAIL_DEFAULT_SENDER=${MAIL_DEFAULT_SENDER:-noreply@tgarttattoo.com}
+      - CONTACT_RECIPIENT=${CONTACT_RECIPIENT:-szkcsgrg@gmail.com}
     volumes:
       - tgart-data:/app/data
       - tgart-uploads:/app/uploads
