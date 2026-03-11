@@ -15,6 +15,7 @@ services:
       - MAIL_PASSWORD=${MAIL_PASSWORD}
       - MAIL_DEFAULT_SENDER=${MAIL_DEFAULT_SENDER:-noreply@tgarttattoo.com}
       - CONTACT_RECIPIENT=${CONTACT_RECIPIENT:-szkcsgrg@gmail.com}
+      - CORS_ORIGINS=${CORS_ORIGINS:-https://tgarttattoo.hu,https://www.tgarttattoo.hu}
     volumes:
       - tgart-data:/app/data
       - tgart-uploads:/app/uploads

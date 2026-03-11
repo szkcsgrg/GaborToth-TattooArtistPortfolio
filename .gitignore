@@ -8,7 +8,7 @@ build/
 # Environment files
 .env
 .env.local
-.env.production
+# .env.production is intentionally tracked (contains only public VITE_ build-time vars)
 
 # Database
 *.db

@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 import tattoo1 from '../../assets/images/gallery/tattoo1.jpg'
 import tattoo2 from '../../assets/images/gallery/tattoo2.jpg'
 import tattoo3 from '../../assets/images/gallery/tattoo3.jpg'
-import tattoo4 from '../../assets/images/gallery/tattoo4.jpg'
+//import tattoo4 from '../../assets/images/gallery/tattoo4.jpg'
 import tattoo5 from '../../assets/images/gallery/tattoo5.jpg'
 import tattoo6 from '../../assets/images/gallery/tattoo6.jpg'
 import tattoo7 from '../../assets/images/gallery/tattoo7.jpg'
@@ -27,26 +27,26 @@ interface GalleryItem {
 }
 
 const GALLERY_ITEMS: GalleryItem[] = [
-  { id: 1, src: tattoo1, category: ['fineline', 'minimal'] },
-  { id: 2, src: tattoo2, category: ['blackwork', 'abstract'] },
-  { id: 3, src: tattoo3, category: ['realism'] },
-  { id: 4, src: tattoo4, category: ['sketch', 'fineline'] },
-  { id: 5, src: tattoo5, category: ['minimal', 'blackwork'] },
-  { id: 6, src: tattoo6, category: ['realism', 'sketch'] },
-  { id: 7, src: tattoo7, category: ['abstract'] },
-  { id: 8, src: tattoo8, category: ['fineline'] },
+  { id: 1, src: tattoo1, category: ['realism'] },
+  { id: 2, src: tattoo2, category: ['sketch'] },
+  { id: 3, src: tattoo3, category: ['fineline'] },
+  //{ id: 4, src: tattoo4, category: ['sketch', 'fineline'] },
+  { id: 5, src: tattoo5, category: ['sketch', 'blackwork'] },
+  { id: 6, src: tattoo6, category: ['fineline', 'realism'] },
+  { id: 7, src: tattoo7, category: ['realism', 'blackwork'] },
+  { id: 8, src: tattoo8, category: ['realism'] },
   { id: 9, src: tattoo9, category: ['blackwork', 'realism'] },
-  { id: 10, src: tattoo10, category: ['minimal'] },
-  { id: 11, src: tattoo11, category: ['sketch', 'abstract'] },
-  { id: 12, src: tattoo12, category: ['realism'] },
-  { id: 13, src: tattoo13, category: ['fineline', 'minimal'] },
-  { id: 14, src: tattoo14, category: ['blackwork'] },
-  { id: 15, src: tattoo15, category: ['sketch'] },
-  { id: 16, src: tattoo16, category: ['abstract', 'realism'] },
+  { id: 10, src: tattoo10, category: ['sketch', 'blackwork'] },
+  { id: 11, src: tattoo11, category: ['sketch'] },
+  { id: 12, src: tattoo12, category: ['fineline'] },
+  { id: 13, src: tattoo13, category: ['fineline'] },
+  { id: 14, src: tattoo14, category: ['sketch'] },
+  { id: 15, src: tattoo15, category: ['abstract'] },
+  { id: 16, src: tattoo16, category: ['blackwork'] },
 ]
 
-const CATEGORIES = ['all', 'fineline', 'blackwork', 'realism', 'minimal', 'sketch', 'abstract'] as const
-
+const CATEGORIES = ['all', 'fineline', 'blackwork', 'minimal', 'sketch', 'abstract', 'realism'] as const
+// minimal / fineline
 export default function Gallery() {
   const { t } = useTranslation()
   const [activeFilter, setActiveFilter] = useState('all')

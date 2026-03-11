@@ -1,13 +1,15 @@
+# Frontend is now hosted separately (tgarttattoo.hu via FTP).
+# Stage below is kept for reference in case we revert to a monolithic setup.
+#
 # Stage 1: Build frontend
-FROM node:22-alpine AS frontend
+# FROM node:22-alpine AS frontend
+# WORKDIR /build
+# COPY frontend/package.json frontend/package-lock.json ./
+# RUN npm ci
+# COPY frontend/ .
+# RUN npm run build
 
-WORKDIR /build
-COPY frontend/package.json frontend/package-lock.json ./
-RUN npm ci
-COPY frontend/ .
-RUN npm run build
-
-# Stage 2: Backend + serve frontend
+# Stage 2: Backend only
 FROM python:3.12-slim
 
 WORKDIR /app
@@ -16,7 +18,6 @@ COPY backend/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY backend/ .
-COPY --from=frontend /build/dist ./static
 
 RUN mkdir -p data uploads
 

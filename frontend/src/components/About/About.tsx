@@ -16,6 +16,8 @@ export default function About({ isRevealed }: AboutProps) {
 
   const paragraphs = t('about.paragraphs', { returnObjects: true }) as string[]
 
+  const [imageParallax, setImageParallax] = useState(0)
+
   // IntersectionObserver for scroll-triggered reveal
   useEffect(() => {
     const section = sectionRef.current
@@ -35,6 +37,26 @@ export default function About({ isRevealed }: AboutProps) {
     return () => observer.disconnect()
   }, [])
 
+  // Image parallax: subtle float effect (desktop only)
+  useEffect(() => {
+    const canHover = window.matchMedia('(hover: hover)').matches
+    if (!canHover) return
+
+    const section = sectionRef.current
+    if (!section) return
+
+    const handleScroll = () => {
+      const rect = section.getBoundingClientRect()
+      // Only compute when section is in viewport
+      if (rect.bottom < 0 || rect.top > window.innerHeight) return
+      const offset = rect.top * -0.08
+      setImageParallax(offset)
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   const isActive = isRevealed && sectionVisible
 
   return (
@@ -50,7 +72,10 @@ export default function About({ isRevealed }: AboutProps) {
 
       {/* Content: image + text */}
       <div className={styles.content}>
-        <div className={`${styles.imageWrapper} ${isActive ? styles.visible : ''}`}>
+        <div
+          className={`${styles.imageWrapper} ${isActive ? styles.visible : ''}`}
+          style={isActive ? { transform: `translateY(${imageParallax}px)` } : undefined}
+        >
           <img src={aboutImage} alt="About Gábor Tóth" className={styles.image} />
         </div>
 

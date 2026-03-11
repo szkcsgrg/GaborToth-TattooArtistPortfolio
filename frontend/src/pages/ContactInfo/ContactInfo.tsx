@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 
 import styles from './ContactInfo.module.scss'
@@ -23,6 +23,44 @@ export default function ContactInfo() {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
   const answerRefs = useRef<(HTMLDivElement | null)[]>([])
   const fileInputRef = useRef<HTMLInputElement>(null)
+
+  // Scroll reveal refs
+  const faqRef = useRef<HTMLElement>(null)
+  const docsRef = useRef<HTMLElement>(null)
+  const contactRef = useRef<HTMLElement>(null)
+  const [faqVisible, setFaqVisible] = useState(false)
+  const [docsVisible, setDocsVisible] = useState(false)
+  const [contactVisible, setContactVisible] = useState(false)
+
+  useEffect(() => {
+    const entries: [React.RefObject<HTMLElement | null>, (v: boolean) => void][] = [
+      [faqRef, setFaqVisible],
+      [docsRef, setDocsVisible],
+      [contactRef, setContactVisible],
+    ]
+
+    const observers: IntersectionObserver[] = []
+
+    entries.forEach(([ref, setter]) => {
+      const el = ref.current
+      if (!el) return
+
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setter(true)
+            observer.disconnect()
+          }
+        },
+        { threshold: 0.15 }
+      )
+
+      observer.observe(el)
+      observers.push(observer)
+    })
+
+    return () => observers.forEach(o => o.disconnect())
+  }, [])
 
   const toggleFaq = (index: number) => {
     setOpenIndex(prev => (prev === index ? null : index))
@@ -58,7 +96,8 @@ export default function ContactInfo() {
     }
 
     try {
-      const res = await fetch('/api/contact', { method: 'POST', body })
+      const apiUrl = import.meta.env.VITE_API_URL ?? ''
+      const res = await fetch(`${apiUrl}/api/contact`, { method: 'POST', body })
       const data = await res.json()
 
       if (data.success) {
@@ -81,7 +120,7 @@ export default function ContactInfo() {
   return (
     <div className={styles.page}>
       {/* ─── Information Section ─── */}
-      <section className={styles.section}>
+      <section className={`${styles.section} ${styles.revealSection} ${faqVisible ? styles.visible : ''}`} ref={faqRef}>
         <div className={styles.header}>
           <p className={styles.sectionLabel}>{t('contactInfo.infoLabel')}</p>
           <h1 className={styles.sectionTitle}>{t('contactInfo.infoTitle')}</h1>
@@ -122,7 +161,7 @@ export default function ContactInfo() {
       </section>
 
       {/* ─── Documents Divider ─── */}
-      <section className={styles.docsDivider}>
+      <section className={`${styles.docsDivider} ${styles.revealSection} ${docsVisible ? styles.visible : ''}`} ref={docsRef}>
         <div className={styles.dividerLine} />
         <h2 className={styles.docsTitle}>{t('contactInfo.docsTitle')}</h2>
         <div className={styles.docsLinks}>
@@ -146,7 +185,7 @@ export default function ContactInfo() {
       </section>
 
       {/* ─── Contact Section ─── */}
-      <section className={styles.section} id="contact-section">
+      <section className={`${styles.section} ${styles.revealSection} ${contactVisible ? styles.visible : ''}`} id="contact-section" ref={contactRef}>
         <div className={styles.header}>
           <p className={styles.sectionLabel}>{t('contactInfo.contactLabel')}</p>
           <h2 className={styles.sectionTitle}>{t('contactInfo.contactTitle')}</h2>
@@ -173,7 +212,7 @@ export default function ContactInfo() {
                   <polyline points="22,6 12,13 2,6" />
                 </svg>
                 <span className={styles.contactText}>
-                  <a href="mailto:info@tgarttattoo.com">info@tgarttattoo.com</a>
+                  <a href="mailto:info@tgarttattoo.hu">info@tgarttattoo.hu</a>
                 </span>
               </div>
               <div className={styles.contactItem}>

@@ -37,8 +37,13 @@ def send_contact_email(form_data, image_data=None, image_filename=None):
         part.add_header('Content-Disposition', f'attachment; filename="{image_filename}"')
         msg.attach(part)
 
-    with smtplib.SMTP(config['MAIL_SERVER'], config['MAIL_PORT']) as server:
-        if config['MAIL_USE_TLS']:
+    if config['MAIL_USE_SSL']:
+        smtp_class = smtplib.SMTP_SSL
+    else:
+        smtp_class = smtplib.SMTP
+
+    with smtp_class(config['MAIL_SERVER'], config['MAIL_PORT']) as server:
+        if not config['MAIL_USE_SSL'] and config['MAIL_USE_TLS']:
             server.starttls()
         if config['MAIL_USERNAME'] and config['MAIL_PASSWORD']:
             server.login(config['MAIL_USERNAME'], config['MAIL_PASSWORD'])

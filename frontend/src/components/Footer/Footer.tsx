@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 
@@ -13,12 +14,32 @@ const DOCUMENTS = [
 
 export default function Footer() {
   const { t } = useTranslation()
+  const footerRef = useRef<HTMLElement>(null)
+  const [visible, setVisible] = useState(false)
+
+  useEffect(() => {
+    const el = footerRef.current
+    if (!el) return
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true)
+          observer.disconnect()
+        }
+      },
+      { threshold: 0.2 }
+    )
+
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [])
 
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} ref={footerRef}>
       <div className={styles.content}>
         {/* Navigation */}
-        <div className={styles.column}>
+        <div className={`${styles.column} ${visible ? styles.visible : ''}`} style={{ transitionDelay: '0s' }}>
           <h3 className={styles.columnTitle}>{t('footer.navigation')}</h3>
           <nav className={styles.links}>
             <Link to="/">{t('nav.home')}</Link>
@@ -29,17 +50,17 @@ export default function Footer() {
         </div>
 
         {/* Contact */}
-        <div className={styles.column}>
+        <div className={`${styles.column} ${visible ? styles.visible : ''}`} style={{ transitionDelay: '0.1s' }}>
           <h3 className={styles.columnTitle}>{t('footer.contact')}</h3>
           <div className={styles.links}>
-            <a href="mailto:info@tgarttattoo.com">info@tgarttattoo.com</a>
-            <a href="tel:+36301234567">+36 30 123 4567</a>
+            <a href="mailto:info@tgarttattoo.hu">info@tgarttattoo.hu</a>
+            {/* <a href="tel:+36301234567">+36 30 123 4567</a> */}
             <Link to="/contact">Zalaegerszeg, Hungary</Link>
           </div>
         </div>
 
         {/* Social */}
-        <div className={styles.column}>
+        <div className={`${styles.column} ${visible ? styles.visible : ''}`} style={{ transitionDelay: '0.2s' }}>
           <h3 className={styles.columnTitle}>{t('footer.social')}</h3>
           <div className={styles.links}>
             <a href="https://www.instagram.com/tgart_tattoo/" target="_blank" rel="noopener noreferrer">Instagram</a>
@@ -49,7 +70,7 @@ export default function Footer() {
         </div>
 
         {/* Documents */}
-        <div className={styles.column}>
+        <div className={`${styles.column} ${visible ? styles.visible : ''}`} style={{ transitionDelay: '0.3s' }}>
           <h3 className={styles.columnTitle}>{t('footer.documents')}</h3>
           <div className={styles.links}>
             {DOCUMENTS.map((doc) => (
@@ -62,7 +83,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className={styles.bottom}>
+      <div className={`${styles.bottom} ${visible ? styles.visible : ''}`}>
         <p className={styles.copyright}>
           &copy; {CURRENT_YEAR} TG Art Tattoo. {t('footer.rights')}
         </p>
