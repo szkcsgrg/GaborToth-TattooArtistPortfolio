@@ -140,7 +140,8 @@
 @media (max-width: 768px) {
   .navbar {
     background-color: rgba(0, 0, 0, 0.9);
-    backdrop-filter: blur(10px);
+    // backdrop-filter removed: it creates a new containing block which
+    // breaks position:fixed on .links (menu overlay clips to navbar height)
   }
 
   .inner {
@@ -179,6 +180,7 @@
     &.open {
       opacity: 1;
       pointer-events: all;
+      overflow-y: auto;
     }
 
     a {
