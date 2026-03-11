@@ -42,7 +42,7 @@ def send_contact_email(form_data, image_data=None, image_filename=None):
     else:
         smtp_class = smtplib.SMTP
 
-    with smtp_class(config['MAIL_SERVER'], config['MAIL_PORT']) as server:
+    with smtp_class(config['MAIL_SERVER'], config['MAIL_PORT'], timeout=30) as server:
         if not config['MAIL_USE_SSL'] and config['MAIL_USE_TLS']:
             server.starttls()
         if config['MAIL_USERNAME'] and config['MAIL_PASSWORD']:
