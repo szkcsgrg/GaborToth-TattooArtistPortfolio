@@ -1,11 +1,11 @@
-import { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import tattoo1 from '../../assets/images/gallery/tattoo1.jpg'
 import tattoo2 from '../../assets/images/gallery/tattoo2.jpg'
 import tattoo3 from '../../assets/images/gallery/tattoo3.jpg'
-import tattoo4 from '../../assets/images/gallery/tattoo4.jpg'
+import tattoo4 from '../../assets/images/gallery/tattoo7.jpg'
 import tattoo5 from '../../assets/images/gallery/tattoo5.jpg'
 import tattoo6 from '../../assets/images/gallery/tattoo6.jpg'
 
@@ -46,7 +46,9 @@ export default function GalleryPreview({ isRevealed }: GalleryPreviewProps) {
     <section id="gallery-preview" className={styles.galleryPreview} ref={sectionRef}>
       {/* Header */}
       <div className={`${styles.header} ${isActive ? styles.visible : ''}`}>
-        <p className={styles.sectionLabel}>03</p>
+          {/* 
+          <p className={styles.sectionLabel}>03</p>
+          */}
         <h2 className={styles.sectionTitle}>{t('galleryPreview.title')}</h2>
         <p className={styles.sectionDescription}>{t('galleryPreview.description')}</p>
       </div>

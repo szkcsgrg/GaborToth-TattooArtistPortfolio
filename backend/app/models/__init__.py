@@ -1,1 +1,1 @@
-# Models will be imported here as they are created
+from app.models.visit import PageVisit

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import aboutImage from '../../assets/images/aboutimage.png'
+import aboutImage from '../../assets/images/aboutimage.jpeg'
 
 import styles from './About.module.scss'
 
@@ -63,7 +63,7 @@ export default function About({ isRevealed }: AboutProps) {
     <section id="about" className={styles.about} ref={sectionRef}>
       {/* Header */}
       <div className={`${styles.header} ${isActive ? styles.visible : ''}`}>
-        <p className={styles.sectionLabel}>01</p>
+      {/* <p className={styles.sectionLabel}>01</p> */}
         <h2 className={styles.sectionTitle}>{t('about.title')}</h2>
       </div>
 

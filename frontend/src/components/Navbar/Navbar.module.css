@@ -8,7 +8,7 @@
   background-color: transparent;
 }
 .navbar.scrolled {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0);
   backdrop-filter: blur(10px);
 }
 
@@ -24,11 +24,11 @@
 
 .logo {
   z-index: 101;
-  height: 5.6rem;
+  height: 3.3rem;
   overflow: hidden;
 }
 .logo img {
-  height: 8.1rem;
+  height: 3.3rem;
   width: auto;
   filter: invert(1);
   -o-object-fit: cover;
@@ -127,14 +127,17 @@
 }
 
 @media (max-width: 768px) {
+  .navbar.scrolled {
+    backdrop-filter: none;
+  }
   .inner {
     padding: 1rem;
   }
   .logo {
-    height: 4rem;
+    height: 2.2rem;
   }
   .logo img {
-    height: 6rem;
+    height: 2.2rem;
   }
   .hamburger {
     display: flex;
@@ -158,6 +161,7 @@
   .links.open {
     opacity: 1;
     pointer-events: all;
+    overflow-y: auto;
   }
   .links a {
     font-size: 1.25rem;

@@ -130,7 +130,7 @@ export default function Services({ isRevealed }: ServicesProps) {
     <section id="services" className={styles.services} ref={sectionRef}>
       {/* Header */}
       <div className={`${styles.header} ${isActive ? styles.visible : ''}`}>
-        <p className={styles.sectionLabel}>02</p>
+        {/*<p className={styles.sectionLabel}>02</p>*/}
         <h2 className={styles.sectionTitle}>{t('services.title')}</h2>
         <p className={styles.sectionDescription}>{t('services.description')}</p>
       </div>

@@ -3,6 +3,8 @@ from collections import defaultdict
 
 from flask import Blueprint, jsonify, request
 
+from app import db
+from app.models.visit import PageVisit
 from app.services.email import send_contact_email
 
 api_bp = Blueprint('api', __name__)
@@ -32,6 +34,23 @@ def _is_rate_limited(ip: str) -> bool:
 @api_bp.route('/health', methods=['GET'])
 def health_check():
     return jsonify({'status': 'ok'})
+
+
+@api_bp.route('/visits', methods=['POST'])
+def record_visit():
+    ip = request.remote_addr or '0.0.0.0'
+    ua = (request.headers.get('User-Agent') or '')[:512]
+    visit = PageVisit(ip_address=ip, user_agent=ua)
+    db.session.add(visit)
+    db.session.commit()
+    total = PageVisit.query.count()
+    return jsonify({'success': True, 'total': total})
+
+
+@api_bp.route('/visits', methods=['GET'])
+def get_visits():
+    total = PageVisit.query.count()
+    return jsonify({'total': total})
 
 
 @api_bp.route('/contact', methods=['POST'])

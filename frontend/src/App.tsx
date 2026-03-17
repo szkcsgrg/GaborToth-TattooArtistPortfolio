@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout/Layout.tsx'
 import LoadingScreen from './components/LoadingScreen/LoadingScreen.tsx'
@@ -8,9 +8,15 @@ import ContactInfo from './pages/ContactInfo/ContactInfo.tsx'
 import NotFound from './pages/NotFound/NotFound.tsx'
 
 
+const API_URL = import.meta.env.VITE_API_URL || ''
+
 export default function App() {
   const [loading, setLoading] = useState(true)
   const [isRevealed, setIsRevealed] = useState(false)
+
+  useEffect(() => {
+    fetch(`${API_URL}/api/visits`, { method: 'POST' }).catch(() => {})
+  }, [])
 
   const handleLoadingComplete = () => {
     setLoading(false)

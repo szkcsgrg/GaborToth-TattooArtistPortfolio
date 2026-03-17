@@ -1,5 +1,5 @@
 .navbar {
-  position: fixed;
+position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -8,7 +8,7 @@
   background-color: transparent;
 
   &.scrolled {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0);
     backdrop-filter: blur(10px);
   }
 }
@@ -25,11 +25,11 @@
 
 .logo {
   z-index: 101;
-  height: 5.6rem;
+  height: 3.3rem;
   overflow: hidden;
 
   img {
-    height: 8.1rem;
+    height: 3.3rem;
     width: auto;
     filter: invert(1);
     object-fit: cover;
@@ -139,9 +139,13 @@
 
 @media (max-width: 768px) {
   .navbar {
-    background-color: rgba(0, 0, 0, 0.9);
+    //background-color: rgba(0, 0, 0, 0.9);
     // backdrop-filter removed: it creates a new containing block which
     // breaks position:fixed on .links (menu overlay clips to navbar height)
+
+    &.scrolled {
+      backdrop-filter: none;
+    }
   }
 
   .inner {
@@ -149,10 +153,10 @@
   }
 
   .logo {
-    height: 4rem;
+    height: 2.2rem;
 
     img {
-      height: 6rem;
+      height: 2.2rem;
     }
   }
 
@@ -163,7 +167,6 @@
   .langDesktop {
     display: none;
   }
-
   .links {
     position: fixed;
     inset: 0;

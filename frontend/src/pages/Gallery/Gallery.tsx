@@ -45,8 +45,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
   { id: 16, src: tattoo16, category: ['blackwork'] },
 ]
 
-const CATEGORIES = ['all', 'fineline', 'blackwork', 'minimal', 'sketch', 'abstract', 'realism'] as const
-// minimal / fineline
+const CATEGORIES = ['all', 'fineline', 'blackwork', 'sketch', 'abstract', 'realism'] as const
 export default function Gallery() {
   const { t } = useTranslation()
   const [activeFilter, setActiveFilter] = useState('all')

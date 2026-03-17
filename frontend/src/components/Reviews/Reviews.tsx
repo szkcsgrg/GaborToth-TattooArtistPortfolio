@@ -108,7 +108,7 @@ export default function Reviews({ isRevealed }: ReviewsProps) {
     <section id="reviews" className={styles.reviews} ref={sectionRef}>
       {/* Header */}
       <div className={`${styles.header} ${isActive ? styles.visible : ''}`}>
-        <p className={styles.sectionLabel}>04</p>
+        {/* <p className={styles.sectionLabel}>04</p> */}
         <h2 className={styles.sectionTitle}>{t('reviews.title')}</h2>
         <p className={styles.sectionDescription}>{t('reviews.description')}</p>
       </div>
