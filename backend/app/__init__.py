@@ -26,7 +26,7 @@ def create_app():
     os.makedirs(app.config.get('UPLOAD_FOLDER', 'uploads'), exist_ok=True)
 
     with app.app_context():
-        import app.models  # noqa: F401 — ensures all models are registered before create_all
+        from . import models  # noqa: F401 — ensures all models are registered before create_all
         db.create_all()
 
     from app.routes.api import api_bp
