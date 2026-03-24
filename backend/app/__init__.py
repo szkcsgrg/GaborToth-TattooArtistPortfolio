@@ -5,19 +5,15 @@ from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 from app.config import Config
 
-_sentry_dsn = os.environ.get('SENTRY_DSN')
-print(f"[Sentry] DSN loaded: {'YES' if _sentry_dsn else 'NO - SENTRY_DSN env var missing!'}", flush=True)
-
-sentry_sdk.init(
-    dsn=_sentry_dsn,
-    send_default_pii=True,
-    debug=True,
-)
-
 db = SQLAlchemy()
 
 
 def create_app():
+    sentry_sdk.init(
+        dsn=os.environ.get('SENTRY_DSN'),
+        send_default_pii=True,
+    )
+
     app = Flask(__name__)
     app.config.from_object(Config)
 
