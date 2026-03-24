@@ -12,6 +12,7 @@ def create_app():
     sentry_sdk.init(
         dsn=os.environ.get('SENTRY_DSN'),
         send_default_pii=True,
+        debug=True,
     )
 
     app = Flask(__name__)
