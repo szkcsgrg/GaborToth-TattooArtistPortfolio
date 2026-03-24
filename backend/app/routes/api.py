@@ -10,10 +10,6 @@ from app.services.email import send_contact_email
 api_bp = Blueprint('api', __name__)
 
 
-@api_bp.route('/sentry-test')
-def sentry_test():
-    1 / 0  # intentional error to verify Sentry integration
-
 
 VALID_SIZES = {'small', 'medium', 'large', 'xlarge'}
 VALID_BODY_PARTS = {
