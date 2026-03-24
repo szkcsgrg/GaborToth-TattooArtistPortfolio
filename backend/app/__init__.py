@@ -1,8 +1,14 @@
 import os
+import sentry_sdk
 from flask import Flask
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 from app.config import Config
+
+sentry_sdk.init(
+    dsn=os.environ.get('SENTRY_DSN'),
+    send_default_pii=True,
+)
 
 db = SQLAlchemy()
 
